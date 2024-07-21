@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #2a6ae8;
-    --secondary-color: #14213d;
-    --accent-color: #fca311;
+    --primary-color: #1A237E;
+    --secondary-color: #757575;
+    --accent-color: #FF7043;
     --background-color: #f8f9fa;
     --text-color: #333333;
 }
@@ -72,6 +72,7 @@ nav a:hover {
 }
 
 .hero p {
+    font-size: 40px;
     font-size: 1.2rem;
     margin-bottom: 2rem;
     max-width: 800px;
