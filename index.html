@@ -1,165 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TradePro - Professional Trading Platform</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <nav class="container">
-            <a href="#" class="logo">TradePro</a>
-            <ul>
-                <li><a href="#MT-4">MetaTrader 4</a></li>
-                <li><a href="#MT-5">MetaTrader 5</a></li>
-                <li><a href="#Pine-Script">Pine Script</a></li>
-                <li><a href="#Python">Python</a></li>
-                <li><a href="#Pine-Script">Pine Script</a></li>            
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>TradePro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#MT-4">MT4</a></li>
+                    <li><a href="#MT-5">MT5</a></li>
+                    <li><a href="#Pine-Script">Pine Script</a></li>
+                    <li><a href="#Python">Python</a></li>
+                    <li><a href="#AI">AI in Trading</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Nền tảng Giao dịch Tiên tiến TradePro</h1>
-                <p>Kết hợp sức mạnh của MetaTrader, Pine Script, Python và AI để tối ưu hóa chiến lược giao dịch của
-                    bạn. Khám phá thế giới giao dịch hiệu quả và thông minh với TradePro.</p>
-                <a href="#" class="cta-button">Bắt đầu giao dịch ngay</a>
-            </div>
-        </section>
-
-        <section id="features" class="features">
-            <div class="container">
-                <h2>Khám phá Nền tảng Đa dạng của Chúng tôi</h2>
-
-                <div id="MT-4" class="feature-item">
-                    <div class="feature-content">
-                        <div class="feature-text">
-                            <h3>MetaTrader 4</h3>
-                            <p>MetaTrader 4 (MT4) là nền tảng giao dịch phổ biến nhất trong thế giới forex và CFD. Với
-                                giao diện thân thiện và công cụ phân tích mạnh mẽ, MT4 cung cấp cho trader mọi thứ cần
-                                thiết để thực hiện giao dịch hiệu quả.</p>
-                            <p>Tính năng nổi bật:</p>
-                            <ul>
-                                <li>Giao diện tùy chỉnh với nhiều biểu đồ và khung thời gian</li>
-                                <li>Hơn 50 chỉ báo kỹ thuật tích hợp sẵn</li>
-                                <li>Hỗ trợ Expert Advisors (EAs) cho giao dịch tự động</li>
-                                <li>Cộng đồng trader lớn và nguồn tài nguyên phong phú</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="feature-images">
-                        <img src="../img/MT 4 chart example.jpg" alt="MT4 Chart Example">
-                        <img src="../img/MT 4 terminal interface.png" alt="MT4 Terminal Interface">
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Explore Our Diverse Platform</h2>
+            <div id="MT-4" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>MetaTrader 4</h3>
+                        <p>MetaTrader 4 (MT4) is the most popular trading platform in the world of forex and CFD. With a user-friendly interface and powerful analytical tools, MT4 provides traders with everything they need to trade effectively.</p>
+                        <p>Key features:</p>
+                        <ul>
+                            <li>Customizable interface with multiple charts and timeframes</li>
+                            <li>Over 50 built-in technical indicators</li>
+                            <li>Support for Expert Advisors (EAs) for automated trading</li>
+                            <li>Large trader community and extensive resources</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div id="MT-5" class="feature-item">
-                    <div class="feature-content">
-                        <div class="feature-text">
-                            <h3>MetaTrader 5</h3>
-                            <p>MetaTrader 5 (MT5) là phiên bản nâng cấp của MT4, cung cấp thêm nhiều tính năng và khả
-                                năng giao dịch đa tài sản. MT5 phù hợp cho cả giao dịch forex và chứng khoán, với công
-                                cụ phân tích và backtesting nâng cao.</p>
-                            <p>Ưu điểm vượt trội:</p>
-                            <ul>
-                                <li>Hỗ trợ giao dịch đa tài sản: forex, cổ phiếu, hàng hóa</li>
-                                <li>Chiến lược giao dịch nâng cao với tính năng hedging</li>
-                                <li>Công cụ backtesting và tối ưu hóa chiến lược mạnh mẽ</li>
-                                <li>Tích hợp sâu với các nguồn dữ liệu thị trường thời gian thực</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="feature-images">
-                        <img src="../img/MT5 Dashboard.png" alt="MT5 Dashboard">
-                        <img src="../img/MT 5 stratery tester.png" alt="MT5 Strategy Tester">
-                    </div>
-                </div>
-
-                <div id="Pine-Script" class="feature-item">
-                    <div class="feature-content">
-                        <div class="feature-text">
-                            <h3>Pine Script</h3>
-                            <p>Pine Script là ngôn ngữ lập trình đặc biệt được thiết kế cho việc tạo chỉ báo tùy chỉnh
-                                và chiến lược giao dịch tự động trên nền tảng TradingView. Với Pine Script, trader có
-                                thể biến ý tưởng giao dịch thành công cụ thực tế.</p>
-                            <p>Đặc điểm chính:</p>
-                            <ul>
-                                <li>Cú pháp đơn giản, dễ học cho cả người mới bắt đầu</li>
-                                <li>Tạo và tùy chỉnh chỉ báo kỹ thuật độc đáo</li>
-                                <li>Xây dựng và kiểm tra chiến lược giao dịch tự động</li>
-                                <li>Tích hợp seamless với TradingView cho việc chia sẻ và cộng tác</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="feature-images">
-                        <img src="../img/Pine Script Editor.png" alt="Pine Script Editor">
-                        <img src="../img/Custom Indicator with Pine Script.jpg" alt="Custom Indicator with Pine Script">
-                    </div>
-                </div>
-
-                <div id="Python" class="feature-item">
-                    <div class="feature-content">
-                        <div class="feature-text">
-                            <h3>Python cho Giao dịch</h3>
-                            <p>Python đã trở thành ngôn ngữ lập trình hàng đầu trong lĩnh vực tài chính định lượng và
-                                giao dịch thuật toán. Với các thư viện mạnh mẽ như Pandas, NumPy, và Scikit-learn,
-                                Python cung cấp khả năng phân tích dữ liệu, xây dựng mô hình và tự động hóa giao dịch.
-                            </p>
-                            <p>Lợi ích của Python trong giao dịch:</p>
-                            <ul>
-                                <li>Phân tích dữ liệu thị trường với hiệu suất cao</li>
-                                <li>Xây dựng và backtesting chiến lược giao dịch phức tạp</li>
-                                <li>Tích hợp với API của nhiều sàn giao dịch và nguồn dữ liệu</li>
-                                <li>Áp dụng machine learning cho dự đoán thị trường</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="feature-images">
-                        <img src="../img/Python Trading Code.jpg" alt="Python Trading Code">
-                        <img src="../img/Python Generated Trading Chart.jpg" alt="Python Generated Trading Chart">
-                    </div>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-content">
-                        <div class="feature-text">
-                            <h3>AI trong Giao dịch</h3>
-                            <p>Trí tuệ nhân tạo (AI) đang cách mạng hóa cách chúng ta tiếp cận giao dịch tài chính. Từ
-                                việc phân tích sentiment thị trường đến tối ưu hóa danh mục đầu tư, AI mang lại những
-                                insight mới và khả năng ra quyết định nhanh chóng.</p>
-                            <p>Ứng dụng của AI trong giao dịch:</p>
-                            <ul>
-                                <li>Phân tích sentiment thị trường từ dữ liệu tin tức và mạng xã hội</li>
-                                <li>Dự đoán xu hướng giá với mô hình học sâu</li>
-                                <li>Tối ưu hóa danh mục đầu tư dựa trên học tăng cường</li>
-                                <li>Phát hiện anomaly và quản lý rủi ro thông minh</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="feature-images">
-                        <img src="../img/AI Trading Dashboard.jpg" alt="AI Trading Dashboard">
-                        <img src="../img/AI Trading Dashboard 1.jpg" alt="AI Trading Dashboard">
-                    </div>
+                <div class="feature-images">
+                    <img src="../img/MT 4 chart example.jpg" alt="MT4 Chart Example">
+                    <img src="./img/MT 4 terminal interface.png" alt="MT4 Terminal Interface">
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div id="MT-5" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>MetaTrader 5</h3>
+                        <p>MetaTrader 5 (MT5) is an upgraded version of MT4, providing additional features and multi-asset trading capabilities. MT5 is suitable for both forex and stock trading, with advanced analytical tools and backtesting capabilities.</p>
+                        <p>Superior advantages:</p>
+                        <ul>
+                            <li>Multi-asset trading support: forex, stocks, commodities</li>
+                            <li>Advanced trading strategies with hedging feature</li>
+                            <li>Powerful strategy backtesting and optimization tools</li>
+                            <li>Deep integration with real-time market data sources</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="./img/MT5 Dashboard.png" alt="MT5 Dashboard">
+                    <img src="./img/MT5 Strategy Tester.jpg" alt="MT5 Strategy Tester">
+                </div>
+            </div>
+
+            <div id="Pine-Script" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>Pine Script</h3>
+                        <p>Pine Script is a special programming language designed for creating custom indicators and automated trading strategies on the TradingView platform. With Pine Script, traders can turn trading ideas into practical tools.</p>
+                        <p>Main features:</p>
+                        <ul>
+                            <li>Simple syntax, easy to learn even for beginners</li>
+                            <li>Create and customize unique technical indicators</li>
+                            <li>Build and test automated trading strategies</li>
+                            <li>Seamless integration with TradingView for sharing and collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="./img/Pine Script Editor.png" alt="Pine Script Editor">
+                    <img src="./img/Custom Indicator with Pine Script.jpg" alt="Custom Indicator with Pine Script">
+                </div>
+            </div>
+
+            <div id="Python" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>Python for Trading</h3>
+                        <p>Python has become the leading programming language in the field of quantitative finance and algorithmic trading. With powerful libraries like Pandas, NumPy, and Scikit-learn, Python provides capabilities for data analysis, model building, and trade automation.</p>
+                        <p>Benefits of Python in trading:</p>
+                        <ul>
+                            <li>High-performance market data analysis</li>
+                            <li>Building and backtesting complex trading strategies</li>
+                            <li>Integration with APIs of various trading platforms and data sources</li>
+                            <li>Applying machine learning for market prediction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="./img/Python Trading Code.jpg" alt="Python Trading Code">
+                    <img src="./img/Python Generated Trading Chart.jpg" alt="Python Generated Trading Chart">
+                </div>
+            </div>
+
+            <div id="AI" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>AI in Trading</h3>
+                        <p>Artificial Intelligence (AI) is revolutionizing the way we approach financial trading. From analyzing market sentiment to optimizing investment portfolios, AI brings new insights and rapid decision-making capabilities.</p>
+                        <p>Applications of AI in trading:</p>
+                        <ul>
+                            <li>Analyzing market sentiment from news and social media data</li>
+                            <li>Predicting price trends with deep learning models</li>
+                            <li>Optimizing investment portfolios based on reinforcement learning</li>
+                            <li>Smart anomaly detection and risk management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="./img/AI Trading Dashboard 1.jpg" alt="AI Trading Dashboard">
+                    <img src="./img/AI Trading Dashboard.jpg" alt="AI Trading Dashboard">
+                </div>
+            </div>
+
+            <div id="about" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>About Us</h3>
+                        <p>TradePro is a leading trading platform, providing the best tools and resources for traders. With over 10 years of industry experience, we are committed to excellence and innovation in financial trading.</p>
+                        <p>Our team of experts is always ready to support you in your trading journey, from the first steps to advanced strategies.</p>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="/api/placeholder/600/300" alt="TradePro Team">
+                    <img src="/api/placeholder/600/300" alt="TradePro Office">
+                </div>
+            </div>
+
+            <div id="contact" class="feature-item">
+                <div class="feature-content">
+                    <div class="feature-text">
+                        <h3>Contact</h3>
+                        <p>We're always here to help. Get in touch with us via:</p>
+                        <ul>
+                            <li>Email: support@tradepro.com</li>
+                            <li>Phone: +1 (123) 456-7890</li>
+                            <li>Address: 123 Trading Street, Financial District, New York, NY 10005</li>
+                        </ul>
+                        <p>Our customer support team works 24/7 to ensure you always receive timely assistance.</p>
+                    </div>
+                </div>
+                <div class="feature-images">
+                    <img src="/api/placeholder/600/300" alt="Contact Us">
+                    <img src="/api/placeholder/600/300" alt="Customer Support">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 TradePro. Bảo lưu mọi quyền.</p>
+            <p>&copy; 2024 TradePro. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- Tích hợp Facebook Messenger Chat Plugin -->
-    <div id="fb-root"></div>
-    
-    <script src="./js.js"></script>
-    <div class="fb-customerchat" attribution="biz_inbox" page_id="YOUR_PAGE_ID_HERE"></div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
 </body>
-
 </html>
