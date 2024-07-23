@@ -88,14 +88,21 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .feature-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .feature-content {
-    flex: 1.5; /* Gives more space to the content */
+    flex: 1;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feature-text h3 {
@@ -131,14 +138,14 @@ nav ul li a:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
     background-color: #f8f9fa;
-    border-left: 1px solid #e9ecef;
 }
 
 .feature-images img {
     width: 100%;
-    height: calc(50% - 10px); /* Subtracting half of the gap */
+    height: calc(50% - 10px);
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -146,7 +153,7 @@ nav ul li a:hover {
 }
 
 .feature-images img:first-child {
-    margin-bottom: 20px; /* Gap between images */
+    margin-bottom: 20px;
 }
 
 .feature-images img:hover {
@@ -203,7 +210,7 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .feature-item {
+    .feature-item, .feature-item:nth-child(even) {
         flex-direction: column;
     }
 
@@ -212,6 +219,7 @@ footer {
         padding: 15px;
         border-left: none;
         border-top: 1px solid #e9ecef;
+        order: -1; /* Đảm bảo hình ảnh luôn ở trên trong chế độ mobile */
     }
 
     .feature-images img {
