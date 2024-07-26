@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -25,14 +27,21 @@
         </div>
     </header>
 
-    <section id="features" class="features">
+    <section id="main-title" class="main-title">
         <div class="container">
             <h2>Explore Our Diverse Platform</h2>
+        </div>
+    </section>
+
+    <section id="features" class="section features">
+        <div class="container">
             <div id="MT-4" class="feature-item">
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>MetaTrader 4</h3>
-                        <p>MetaTrader 4 (MT4) is the most popular trading platform in the world of forex and CFD. With a user-friendly interface and powerful analytical tools, MT4 provides traders with everything they need to trade effectively.</p>
+                        <p>MetaTrader 4 (MT4) is the most popular trading platform in the world of forex and CFD. With a
+                            user-friendly interface and powerful analytical tools, MT4 provides traders with everything
+                            they need to trade effectively.</p>
                         <p>Key features:</p>
                         <ul>
                             <li>Customizable interface with multiple charts and timeframes</li>
@@ -47,12 +56,14 @@
                     <img src="./img/MT 4 terminal interface.png" alt="MT4 Terminal Interface">
                 </div>
             </div>
-    
+
             <div id="MT-5" class="feature-item">
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>MetaTrader 5</h3>
-                        <p>MetaTrader 5 (MT5) is an upgraded version of MT4, providing additional features and multi-asset trading capabilities. MT5 is suitable for both forex and stock trading, with advanced analytical tools and backtesting capabilities.</p>
+                        <p>MetaTrader 5 (MT5) is an upgraded version of MT4, providing additional features and
+                            multi-asset trading capabilities. MT5 is suitable for both forex and stock trading, with
+                            advanced analytical tools and backtesting capabilities.</p>
                         <p>Superior advantages:</p>
                         <ul>
                             <li>Multi-asset trading support: forex, stocks, commodities</li>
@@ -72,7 +83,9 @@
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>Pine Script</h3>
-                        <p>Pine Script is a special programming language designed for creating custom indicators and automated trading strategies on the TradingView platform. With Pine Script, traders can turn trading ideas into practical tools.</p>
+                        <p>Pine Script is a special programming language designed for creating custom indicators and
+                            automated trading strategies on the TradingView platform. With Pine Script, traders can turn
+                            trading ideas into practical tools.</p>
                         <p>Main features:</p>
                         <ul>
                             <li>Simple syntax, easy to learn even for beginners</li>
@@ -92,7 +105,9 @@
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>Python for Trading</h3>
-                        <p>Python has become the leading programming language in the field of quantitative finance and algorithmic trading. With powerful libraries like Pandas, NumPy, and Scikit-learn, Python provides capabilities for data analysis, model building, and trade automation.</p>
+                        <p>Python has become the leading programming language in the field of quantitative finance and
+                            algorithmic trading. With powerful libraries like Pandas, NumPy, and Scikit-learn, Python
+                            provides capabilities for data analysis, model building, and trade automation.</p>
                         <p>Benefits of Python in trading:</p>
                         <ul>
                             <li>High-performance market data analysis</li>
@@ -112,7 +127,9 @@
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>AI in Trading</h3>
-                        <p>Artificial Intelligence (AI) is revolutionizing the way we approach financial trading. From analyzing market sentiment to optimizing investment portfolios, AI brings new insights and rapid decision-making capabilities.</p>
+                        <p>Artificial Intelligence (AI) is revolutionizing the way we approach financial trading. From
+                            analyzing market sentiment to optimizing investment portfolios, AI brings new insights and
+                            rapid decision-making capabilities.</p>
                         <p>Applications of AI in trading:</p>
                         <ul>
                             <li>Analyzing market sentiment from news and social media data</li>
@@ -132,8 +149,11 @@
                 <div class="feature-content">
                     <div class="feature-text">
                         <h3>About Us</h3>
-                        <p>TradePro is a leading trading platform, providing the best tools and resources for traders. With over 10 years of industry experience, we are committed to excellence and innovation in financial trading.</p>
-                        <p>Our team of experts is always ready to support you in your trading journey, from the first steps to advanced strategies.</p>
+                        <p>TradePro is a leading trading platform, providing the best tools and resources for traders.
+                            With over 10 years of industry experience, we are committed to excellence and innovation in
+                            financial trading.</p>
+                        <p>Our team of experts is always ready to support you in your trading journey, from the first
+                            steps to advanced strategies.</p>
                     </div>
                 </div>
                 <div class="feature-images">
@@ -175,11 +195,18 @@
         </div>
     </footer>
 
+    <!-- Thêm nút Messenger nổi -->
+    <div id="floating-messenger-btn" class="floating-messenger-btn">
+        <i class="fab fa-facebook-messenger"></i>
+    </div>
+
     <script>
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "YOUR_FACEBOOK_PAGE_ID"); // Replace with your Facebook Page ID
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
+
+    <script src="./js.js"></script>
 </body>
+
 </html>
